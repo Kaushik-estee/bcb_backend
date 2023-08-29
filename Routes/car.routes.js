@@ -24,8 +24,8 @@ carRouter.get("/",async(req,res)=>{
 })
 carRouter.post("/post",async(req,res)=>{
     try {
-        const todo = new carModel(req.body)
-    await todo.save()
+        const car = new carModel(req.body)
+    await car.save()
     res.send("posted")
         
     } catch (error) {
